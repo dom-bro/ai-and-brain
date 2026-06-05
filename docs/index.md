@@ -8,13 +8,13 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /s1-AI/
+      link: /ai/current-state/
 
 features:
   - icon: 🤖
     title: AI 狂飙之路
     details: 从感知机到 Transformer，从 AlphaGo 到大模型——AI 是如何一步步走到今天的。
-    link: /s1-AI/
+    link: /ai/current-state/
     linkText: 阅读第一部分
   - icon: 🧠
     title: 大脑的奥秘

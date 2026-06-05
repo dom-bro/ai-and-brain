@@ -9,34 +9,31 @@ export default defineConfig({
   cleanUrls: true,
 
   themeConfig: {
-    nav: [
-    ],
-
     sidebar: {
-      '/s1-AI/': [
+      '/ai/current-state': [
         {
           text: '🤖 AI狂飙之路',
           items: [
-            { text: '本章导读', link: '/01-ai/' },
+            { text: '最好的时代亦是最坏的时代', link: '/ai/current-state' },
           ],
         },
       ],
-      '/s2-brain/': [
-        {
-          text: '🧠 大脑的奥秘',
-          items: [
-            { text: '本章导读', link: '/02-brain/' },
-          ],
-        },
-      ],
-      '/s3-future/': [
-        {
-          text: '🌌 未来',
-          items: [
-            { text: '本章导读', link: '/03-future/' },
-          ],
-        },
-      ],
+      // '/brain/': [
+      //   {
+      //     text: '🧠 大脑的奥秘',
+      //     items: [
+      //       { text: '本章导读', link: '/brain/' },
+      //     ],
+      //   },
+      // ],
+      // '/future/': [
+      //   {
+      //     text: '🌌 未来',
+      //     items: [
+      //       { text: '本章导读', link: '/future/' },
+      //     ],
+      //   },
+      // ],
     },
 
     outline: {
@@ -54,27 +51,9 @@ export default defineConfig({
       formatOptions: { dateStyle: 'short', timeStyle: 'short' },
     },
 
-    search: {
-      provider: 'local',
-      options: {
-        locales: {
-          root: {
-            translations: {
-              button: { buttonText: '搜索文档', buttonAriaLabel: '搜索文档' },
-              modal: {
-                noResultsText: '无法找到相关结果',
-                resetButtonTitle: '清除查询条件',
-                footer: {
-                  selectText: '选择',
-                  navigateText: '切换',
-                  closeText: '关闭',
-                },
-              },
-            },
-          },
-        },
-      },
-    },
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/dom-bro/ai-and-brain' },
+    ]
   },
   base: `/${pkg.name}/`,
   srcDir: `./docs`,
